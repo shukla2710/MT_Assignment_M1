@@ -1,0 +1,661 @@
+Module -2 : Manual Testing
+
+
+Error : A mistake in code/incorrect value
+
+Defect : Error found by the tester.
+
+Bug : Defect accepted by the developer/development team.
+
+Fault : any incorrect step
+
+Failure : product/build does not meet the requirement.
+
+
+software in the form of build.
+dev (source code) -> executable code = build
+
+
+
+The Role of Testing:
+------------------------------
+. Improve or increase the quality
+. reduce the risk
+
+
+Quality :
+--------------------------------------
+‘The degree to which a component, system or process
+meets specified requirements and/or user/customer needs and
+expectations’
+
+Key aspects of quality for the customer include:
+---------------------------------------------------------
+Good design – looks and style
+Good functionality – it does the job well
+Reliable – acceptable level of breakdowns or failure
+Consistency
+Durable – lasts as long as it should
+Good after sales service
+Value for money
+
+
+
+risk :
+------------------------------------------
+‘A factor that could result in future negative
+consequences;
+
+types of risk:
+----------------------------------------
+1) Project risk  (before manufacturing)
+risk have to face during the development (in process)
+e.g senior developer can take exit in between the project development.
+
+2) Product risk (after manufactoring)
+risk have to face after development & manufacturing.
+e.g product lounch on release date & next date same product available in the market.
+
+Test Organization:
+-----------------------------
+-->Who does Testing?
+.Test Engineer(QA)
+.Developer
+.Product Owner / Project Leader
+.end user/cutomer
+
+Different companies have difference designations for people who test the
+software on the basis of their experience and knowledge such as
+Software Tester, Software Quality Assurance Engineer, and QA Analyst
+etc.
+
+
+-->What do Tester?
+Test Analysis
+Test Design
+Test Execution
+Test Environment management
+Test Data management
+
+-->Role of Software Tester
+. Speed up development process by identifying bugs at an early stage 
+. Reduce the organization's risk of legal liability
+. Maximize the value of the software
+. Assure successful launch of the product, save money, time 
+. to manage reputation of the company by discovering bugs and design flaws 
+
+
+-->Test Planning Template
+Or
+Test Planning  Process
+
+1. what is test planning?
+A document describing the scope, approach, resources and schedule 
+of intended test activities.
+
+Determining the scope and risks, and identifying the objectives of testing.
+
+2. Test planning strategy :
+test policy (organization) 
+->functional test planning, 
+->system integration test planning
+->Acceptance test planning
+
+3. Test Planning Factors
+The organisation’s test policy
+Scope of the testing 
+Testing objectives
+Project Risks – e.g. business, technical, people
+Constraints – e.g. business imposed, financial, contractual etc
+Criticality (e.g. system/component level)
+Testability
+Availability of resources
+
+
+
+4. Test Planning Activities
+-> Define the approach for testing regarding  entry and exit criteria.
+-> Integrating and coordinating the testing activities into the software life cycle 
+activities:
+-> Making decisions about:
+		what to test
+		who do testing? i.e. what roles will perform the test activities
+		when and how the test activities should be done 
+		how the test results will be evaluated
+-> Assigning resources for the different tasks defined.
+-> documentation
+-> Selecting metrics for monitoring and controlling test preparation
+-> Process:  test preparation and execution.
+
+5. Exit Criteria
+Run out of time?
+Run out of budget?
+The business tells you it went live last night!
+Boss says stop?
+All defects have been fixed?
+When our exit criteria have been met?
+
+
+-----------------------------------------------------------------------------------
+
+
+QA :
+
+QC : 
+
+
+
+SDLC :
+1.planning
+2.anaysis
+3.design
+4.Implementation
+5.testing
+6.maintenace
+
+
+
+-->How much Testing is Enough?
+
+-till risk will be acceptable.
+-till exit criteria met.
+
+
+
+--> Testing vs. Debugging
+
+1) testing is kind of validation process. debugging is kind of verification &
+validation process.
+
+2) testing is to find the problem or defect/bug.
+debigging is the peocess to find bug and resolve it.
+
+3) testing by TE, QA. debugging by developen or tester.
+
+4) testing is an activity of black box testing. 
+debugging is an activity of white box testing.
+
+5) testing : caused by defect
+debugging : couse of defect
+
+
+
+-->  Test Analysis.
+Test analysis is the process of looking at something that can be used to
+derive test information. This basis for the tests is called the test basi
+
+
+--> Test Script
+A set of sequential instruction that detail how to execute a core
+business function. Two types of test scripts are there.
+1) manual testing script
+2)automated script
+
+
+-->Test Scenario
+A Scenario is any functionality that can be tested. It is also called
+Test Condition, or Test Possibility.
+Test Scenario is ‘What to be tested’
+Test scenario is nothing but test procedure.
+The scenarios are derived from use cases.
+
+Use case -> Test scenario -> Test cases -> Defect report.
+
+
+Self Testing & Independent testing:
+---------------------------------------------
+Tests by the person who wrote the item.
+Tests by another person within the same team.
+Tests by the person from some different group.
+Tests by a person from a different organization or company.
+
+Level of Software Testing :
+
+1)  Component Testing/ Unit Testing
+
+Sometimes known as Unit Testing, Module Testing or Program Testing 
+
+Unit Testing is a level of the software testing process where individual 
+units/components of a software/system are tested.
+
+Unit tests are typically written and run by software developers
+
+Unit testing is performed by using the White Box Testing method
+
+
+2)  Integration Testing 
+
+ Integration Testing is a level of the software testing process 
+where individual units are combined and tested as a group.
+
+Integration testing is done by a specific integration tester or test team
+
+There are 2 levels of Integration Testing
+⚫ Component Integration Testing
+⚫ System Integration Testing (SIT) (always performed after system testing)
+
+
+Component Integration Testing: Testing performed to expose defects in the
+interfaces and interaction between integrated components.
+
+System Integration Testing:
+It tests the interactions between different systems and may be done 
+after system testing.
+
+Functional Testing 
+Non-functional Testing
+
+->Integration Testing Methods:
+
+
+Two types methods of Integration Testing:
+-------------------------------------------------
+
+1) Big Bang Integration Testing
+2) Incremental Integration Testing
+		Top Down Approach
+		Bottom Up Approach
+
+--> Big bang Integration Testing :
+In Big Bang integration testing all components or modules is
+integrated simultaneously, after which everything is tested as a whole.
+
+Big Bang testing has the advantage that everything is finished before 
+integration testing starts.
+
+Advantages :
+. good for small system
+
+Disadvantages :
+. fault identification is difficult.
+. interfaces or any componenet may be missed for integration.
+. all modules are tested at once, testing can not be possible by priority.
+
+
+
+--> Top Down Approach
+Testing takes place from top to bottom. (visiting main functionality to sub functionality)
+
+Advantages : 
+. fault identification is difficult.
+. Possibility to obtain an early prototype.
+. Critical Modules are tested on priority; 
+
+
+Disadvantages :
+. Needs many Stubs.
+
+
+--> Bottom Up Approach
+
+Testing takes place from the bottom of the control flow upwards.
+
+Advantages :
+- Fault localization is easier
+
+
+Disadvantages :
+. Possibility to obtain an early prototype.
+. Critical Modules are tested on priority;
+
+
+Stubs & Drivers :
+
+Dummy programs for top-down & bottom up integration.
+
+
+3) System Testing.
+
+System Testing - level of testing to used to verify that the integrated system meets 
+their requirements or not.
+
+two types of System Testing :
+1) Functional Testing
+Testing the attributes of the system directly related to the function.
+
+
+2) Non-Functional Testing
+Testing the attributes of the system directly not related to the function.
+like to check the relaibility or usability of the system.
+
+
+
+
+Functional vs. Non-Functional
+-------------------------------------------------------------------------
+1) Definition
+2) Example
+3) Easy to do manual & automation with Functional Testing.
+   Tough to do manual testing with Non-functional testing.
+4) Business requirements should be fulfilled for functional.
+   Perfomance parameter like speed, accuracy, usability should be 
+   fulfiled with non-funcitonal.
+5) First to execute Functional.
+   Non-functional should be executed after Functional testing.
+6) Functional testing describes what the product does.
+   Nonfunctional testing describes how good the
+    product works.
+7) Functional Testing: Balck box, white box, smoke, sanity, unit, integration, regression,
+   Non-functional Testing : Perfomance testing : GUI, Security, Load, Stress, compatibility.
+
+
+-----> Functional Testing :
+
+
+Black Box Testing:
+-----------------------------------------------------
+The technique of testing without having any knowledge of the
+interior workings of the application is Black Box testing.
+
+
+In black-box testing the tester is 
+concentrating on what the software does, not how it does it.
+
+The tester does not have access to the source code.
+
+
+Black Box Testing Methods : 
+-------------------------
+Equivalence partitioning (EP)
+Boundary value analysis (BVA)
+Decision tables
+State transition testing
+
+
+
+Equivalence partitioning (EP) :
+........................................
+It is a method to divide the range into equivalence partition & select one represenative
+from the given partition, then you can check that represenative value to test the whole 
+partition.
+
+
+Range	     Represenatative	Result
+------------------------------------		
+1 to 20		10		Pass (valid range)
+21 to 40	26		Pass (valid range)
+41 to 60	55		Pass (valid range)
+61 to 80	67		Pass (valid range)
+81 to 100	99		Pass (valid range)
+101 to 120	105		Fail (invalid range)
+
+
+
+Boundry Value Analysis
+...................................................
+
+
+To check the boundries  with valid range.
+
+e. g 1 to 50
+
+              0   1   2              49   50  51
+            a-1   a  a+1            a-1   a   a+1
+
+
+
+Decision Table :
+.........................................
+
+Boolean expressions : true or false
+
+Decision Table the relationships between the inputs 
+and the possible outputs are mapped together.
+
+also called ’cause-effect’ table.
+
+
+
+
+State Transaction/Transition Testing : 
+......................................................
+
+To test the system by all the given transactions stored in finite state machine.
+
+Any system where you get a different output for the same input, 
+depending on what has happened before, is a finite state system.
+
+
+White Box Testing:
+-----------------------------------------------------
+
+White Box Testing: Testing based on an analysis of the internal
+structure of the component or system.
+
+White box testing is also called glass testing or open box testing
+
+Types of White box Methods : 
+--------------------------------
+
+1) Statement Coverage
+The statement coverage is also known as line coverage or segment
+coverage.
+The statement coverage covers only the true conditions.
+
+
+2)Decision/Branch Coverage
+It covers both the true and false conditions 
+
+3) Condition Coverage
+not gaurantee for full coverage.
+
+
+
+
+
+Experience Based Testing
+.............................................
+
+Experience based techniques are non structured and do not rely on
+specification documents.
+
+In experience-based techniques, people’s knowledge, skills and
+background are of prime importance to the test conditions and
+test cases.
+
+
+Methods:
+-------------------
+1) Grey Box Testing
+
+Grey Box testing is a technique to test the application with limited
+knowledge of the internal workings of an application.
+
+2)Adhoc Testing 
+.Adhoc testing is an informal testing type with an aim to break the
+system.
+.Main aim of this testing is to find defects by random checking.
+.Adhoc testing can be achieved with the testing technique 
+called Error Guessing.
+
+Types of Adhoc Testing
+--------------------------------------
+
+* Buddy Testing
+Two buddies mutually work on identifying defects in the same module. 
+Mostly one buddy will be from development team and another person will 
+be from testing team.  
+
+* Pair testing
+Two testers are assigned modules, share ideas and work on the same 
+machines to find defects. One person can execute the tests and another 
+person can take notes on the findings. Roles of the persons can be a tester 
+and scriber during testing.
+
+* Monkey Testing
+Randomly test the product or application without test cases with a goal
+to break the system.
+
+
+
+3) Exploratory Testing
+Exploratory testing is a concurrent process. It is a kind of thinking of a process
+to identify the defect.
+e.g not to visit all the modules acc. to functionalities.
+
+
+--> Software Build :
+. Developer converts the source code to executable code for texting then it will be
+called software build. (dev hands over the software version to the tester.)
+
+
+
+--> Smoke & Sanity Testing :
+
+Smoke Testing : 
+-------------------------------------------
+.After receiving software build, Smoke Testing is performed  to verify that the
+critical functionalities of the program is working fine.
+.Smoke testing is always performed on initial builds to check the stability of the app.
+
+.Critical Functionality :
+----------------------
+e.g login, log out,
+e.g sing up
+e.g email send or receive
+e.g generate OTP 
+e.g add to cart
+e.g payment possible with payment gateway
+e.g
+When we play the game and make it score will be added in score but when we update the application but 
+score not be changed
+e.g 
+If mobile is in 4g but now new mobile are you buying and new mobile is 5g so we check mobile
+4g is working properly or not.
+
+
+Sanity Testing
+-----------------------------------------------------------------------
+After receiving a software build, with minor changes in code, or 
+functionality, Sanity testing is performed to ascertain that the 
+bugs have been fixed and no further issues are introduced due 
+to these changes.
+
+e.g 
+Interrupt testing- Able to receive the calls while running the application
+
+e.g
+When we play the game so new functionality not affect the other mobile functionality
+
+
+
+Smoke vs. Sanity :
+--------------------------
+
+1) definition
+
+2) smoke : to check the stability of the app.
+   sanity : to check the rationality of the app.
+
+3) smoke : scripted, documented, well-planned (why-STLC)
+   sanity : unscripted, not documented, not well-planned.
+
+4) smoke : subset of acceptance testing
+   sanity : subset of regression testing
+
+5) smoke : performed by the developer & tester.
+   sanity : performed by the tester only.
+
+6) smoke : general health check up
+   sanity : specialized health check up.
+
+
+
+
+End to End Testing :
+--------------------------------
+End-to-End Testing checks its integration with external 
+interfaces.
+
+If any one of the sub-system fails, the whole software system
+could collapse.
+This is major risk and can be avoided by End-to-End testing.
+
+End-to-End testing verifies the complete system flow. It increase test coverage 
+of various sub-systems.
+
+e.g when remote will be connect with your game machine.
+e.g When punch machine connect with your desktop PC at that time your intime punch will be show 
+in your system
+
+
+
+
+-----> Non Functional Testing
+------------------------------------------
+*) Usability  Testing
+
+To check the user friendliness, Effectiveness of the system, Efficiency, Accuracy. 
+To check the problems that user has to face with user interface.
+
+e.g In gmail, notification by "Message sent".
+e.g To provide tool tip to know the operation by icon. 
+
+
+*) Compatibility  Testing
+
+.In computer world, compatibility is to check whether your software is 
+capable of running on different hardware, operating systems, 
+applications, network environments or mobile devices.
+
+.Compatibility Testing is a type of the Non-functional testing.
+
+Types of Compatibility Testing
+------------------------------
+Hardware
+Operating Systems
+Software
+Network
+Browser
+Devices
+Mobile
+Versions of the software
+	Backward compatibility Testing
+	Forward compatibility Testing
+
+
+
+*) GUI Testing
+
+GUI testing involves checking the screens 
+with the controls like menus, buttons, icons, and all types of bars – tool bar, 
+menu bar, dialog boxes and windows etc.
+
+Font size, style, & readable font, image resolution & clarity, size, 
+Error message window, color combination
+
+
+.Approach of GUI Testing
+--------------------------------
+MANUAL BASED TESTING
+RECORD AND REPLAY
+MODEL BASED TESTING
+
+
+*) Security Testing
+To find out the loop holes against the security of the app.
+
+e.g Verify CAPTCHA functionality
+Every payment gateway app used security code or OTP
+
+
+ROLES YOU MUST KNOW!
+Hackers - Access computer system or network without authorization
+Crackers – Break into the systems to steal or destroy data
+Ethical Hacker – Performs most of the breaking activities but with permission from 
+owner
+Script Kiddies or packet monkeys – Inexperienced Hackers with programming 
+language skill
+
+
+Security Testing Techniques:
+-> Tiger box
+-> Black box
+-> Grey box
+
+
+
+
+
+
+
